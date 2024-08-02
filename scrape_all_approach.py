@@ -8,6 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from page_navigation import open_website, setup_driver, scroll_by_pixels
 from db import send_to_db
 
+
 def scrape_data(driver, player_list):
     elements = driver.find_elements(By.CLASS_NAME, 'hLDjoK')
     for element in elements:
