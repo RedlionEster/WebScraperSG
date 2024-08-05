@@ -17,26 +17,26 @@ Welcome to our awesome project! Here, we dive into the world of ATP and WTA tenn
 
 ## How to Join the Fun 🎉
 
-1. Fork it!
+1. **Fork it!**
 
-2. Create a branch:
+2. **Create a branch:**
 
     ```sh
     git checkout -b my-new-feature
     ```
 
-3. Do your magic and commit your changes:
+3. **Do your magic and commit your changes:**
 
     ```sh
    git commit -m 'Add some awesome feature'
    
-4. Push it:
+4. **Push it:**
 
     ```sh
     git push origin my-new-feature
     ```
 
-5. Create a pull request :D
+5. **Create a pull request :D**
 
 ## License 📜
 
