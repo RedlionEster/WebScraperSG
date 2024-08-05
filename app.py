@@ -6,12 +6,14 @@ from datetime import datetime
 
 app = Flask(__name__)
 db = get_client()
-fs= gridfs.GridFS(db)
+fs = gridfs.GridFS(db)
+
 
 @app.route('/')
 def index():
     return render_template('index.html')
-    
+
+
 @app.route('/graph/<key>')
 def return_graph(key):
     document = db.tennis.find_one({'name': key})
@@ -19,8 +21,9 @@ def return_graph(key):
         return 'No document found', 404
     image_binary = document['img']
     buffer = BytesIO(image_binary)
-    buffer.seek(0)
+    buffer.seek(0) |
     return send_file(buffer, mimetype='image/png')
+
 
 @app.route('/WTAcountries', methods=('POST', 'GET'))
 def WTAcountries():
@@ -31,6 +34,7 @@ def WTAcountries():
     top5_500 = top500['content'][:5]
     print(top5_500)
     return render_template('WTAcountries.html', top5=top5, top5_500=top5_500)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

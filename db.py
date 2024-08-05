@@ -39,7 +39,7 @@ def send_graph_to_db(key):
     tennis.insert_one(document)
 
 def return_graph(key):
-    #name = key + datetime.today().strftime('%Y-%m-%d')
+    name = key + datetime.today().strftime('%Y-%m-%d')
     document = tennis.find_one({'name' : key})
     if document is None:
         return print('no doc found')
