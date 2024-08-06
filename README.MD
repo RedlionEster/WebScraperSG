@@ -11,9 +11,9 @@ Welcome to our awesome project! Here, we dive into the world of ATP and WTA tenn
 ## Techie Stuff 🛠️
 
 - **Frontend Magic**: HTML, CSS, Bulma
-- **Backend Wizardry**: 
-- **Data Crunching**: 
-- **Scraping Ninjas**: 
+- **Backend Wizardry**: Python, json, Flask, MongoDB
+- **Data Crunching**: Python, json, Flask, MongoDB
+- **Scraping Ninjas**: Python, json, Flask, MongoDB
 
 ## How to Join the Fun 🎉
 
