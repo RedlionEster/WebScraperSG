@@ -112,3 +112,4 @@ comp_df.plot.barh(figsize=(20, 10), title='comparison of top 20 countries based 
 
 send_graph_to_db('comp_top20_100_500')
 plt.show()
+

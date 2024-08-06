@@ -93,3 +93,4 @@ def scraping_precise(link, table, subtable, rank_name, name_name, country_name, 
     driver.close()
     print(data)           
     return data
+

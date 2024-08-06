@@ -30,6 +30,7 @@ simple_snapshots = [
     '20171220140301'
     ]
 
+
 # 2020
 
 def string_maker(snapshot):
