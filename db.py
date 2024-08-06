@@ -39,7 +39,7 @@ def send_graph_to_db(key):
     tennis.insert_one(document)
 
 def return_graph(key):
-    name = key + datetime.today().strftime('%Y-%m-%d')
+    #name = key + datetime.today().strftime('%Y-%m-%d')
     document = tennis.find_one({'name' : key})
     if document is None:
         return print('no doc found')
@@ -56,6 +56,10 @@ def return_graph(key):
 def get_client():
     return db
 
+def show_names():
+    for document in tennis.find({}, {'_id':0, 'name':1}):
+        print(document.get('name'))
+
 '''
 Some useful test print statements for testing database connectivity
 '''
@@ -69,5 +73,8 @@ Some useful test print statements for testing database connectivity
 # for list in tennis.find():
 #     print(list)
 
-# print(datetime.today().strftime('%Y-%m-%d')) 
+# print(datetime.today().strftime('%Y-%m-%d'))
 # print([i for i in tennis.find({'name' : 'wtaMasterList2024-01-07/27/24'})])
+
+
+#show_names()

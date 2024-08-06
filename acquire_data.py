@@ -30,7 +30,6 @@ simple_snapshots = [
     '20171220140301'
     ]
 
-
 # 2020
 
 def string_maker(snapshot):
@@ -76,4 +75,5 @@ def run20_21(list):
 CONTROL HUB
 '''
 #run15_16(snapshots)
-run20_21(['20200318145554'])
+run17_19(simple_snapshots)
+#run20_21(['20200318145554'])
