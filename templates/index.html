@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="styles.css">
+
     <!-- Inline styles -->
     <style>
         /* General body styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
         }
+
         /* Styling for header section */
         .header {
             background: #f5f5f5; /* Light gray background */
@@ -41,8 +45,8 @@
             text-align: center;
         }
         .custom-subtitle, .content p {
-            font-size: 1.25em;
-            text-align: center;
+            font-size: 1.00em;
+            text-align: justify;
             color: #333;
         }
         /* Section padding */
@@ -54,62 +58,55 @@
             text-align: center;
         }
         /* Justify text */
-        .justified-text {
+        {
             text-align: justify;
         }
         /* Styling for left navigation */
         .left-nav {
             background-color: #f5f5f5;
             padding: 1rem;
-            height: 100vh; /* Full height */
+            height: 100vh;
+            margin-top: 4rem; /* Start below the header */
         }
-        .left-nav .menu-label {
-            font-size: 1.25em;
-            color: #333;
-        }
-        /* Remove default margin from columns */
-        .columns {
-            margin-left: 0;
-            margin-right: 0;
-        }
-        .main-content {
-            padding-left: 2rem;
+        .menu-list a, .menu-label {
+            font-size: 1.00em;
+            font-weight: normal;
+            display: block;
+            padding: 0.5rem 0;
         }
     </style>
 </head>
 <body>
-    <!-- Header section with title and subtitle -->
     <header class="header">
-        <h1 class="title">Welcome to Our Data Court</h1>
-        <h2 class="subtitle">This Webpage is all about exploring tennis by looking at data first.</h2>
+        <div class="container">
+            <h1 class="title">Welcome to Our Data Court</h1>
+            <p class="subtitle">This Webpage is all about exploring tennis by looking at data first.</p>
+        </div>
     </header>
-
-    <!-- Main content with navigation and sections -->
     <div class="columns is-gapless">
-        <!-- Navigation menu -->
-        <aside class="column is-2 left-nav">
-            <nav class="menu">
-                <p class="menu-label">Home</p>
+        <div class="column is-one-fifth left-nav">
+
+            <!-- Navigation links -->
+            <p class="menu-label">Landing Page</p>
                 <ul class="menu-list">
-                    <li><a href="#">Landing Page</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <p class="menu-label">Data Stories</p>
                 <ul class="menu-list">
-                    <li><a href="#">Who rules the WTA?</a></li>
-                    <li><a href="#">Who rules the ATP?</a></li>
+                    <li><a href="WTAcountries.html">Who rules the WTA?</a></li>
+                    <li><a href="ATPcountries.html">Who rules the ATP?</a></li>
+                    <li><a href="NextStory.html">Next Story</a></li>
                 </ul>
-            </nav>
-        </aside>
+            </p>
+        </div>
+        <div class="column">
 
-        <!-- Main content area -->
-        <div class="column main-content">
-            <!-- Section for mission statement -->
+            <!-- Main content -->
             <section class="section">
                 <div class="container">
-                    <h1 class="custom-title">A Data Story ... About Tennis!</h1>
-                    <p class="custom-subtitle justified-text">Our Mission: Delivering insights through analysis of historical data for ATP and WTA tennis, alongside GDP and population statistics. Unlocking the stories hidden within the numbers, we dive deep into the world of ATP and WTA tennis, beside the economic tales of GDP and population trends, to deliver data analysis.</p>
+                    <h2 class="custom-title">A Data Story ... About Tennis!</h2>
+                    <p class="custom-subtitle">Our Mission: Delivering insights through analysis of historical data for ATP and WTA tennis, alongside GDP and population statistics. Unlocking the stories hidden within the numbers, we dive deep into the world of ATP and WTA tennis, beside the economic tales of GDP and population trends, to deliver data analysis.</p>
                 </div>
             </section>
 
