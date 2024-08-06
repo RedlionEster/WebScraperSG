@@ -22,6 +22,7 @@
             padding: 2rem 0;
             text-align: center;
             border-bottom: 1px solid #ddd; /* Subtle border to define the header */
+            width: 100%;
         }
         .header .title {
             font-size: 2.5em;
@@ -56,60 +57,99 @@
         .justified-text {
             text-align: justify;
         }
+        /* Styling for left navigation */
+        .left-nav {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            height: 100vh; /* Full height */
+        }
+        .left-nav .menu-label {
+            font-size: 1.25em;
+            color: #333;
+        }
+        /* Remove default margin from columns */
+        .columns {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .main-content {
+            padding-left: 2rem;
+        }
     </style>
 </head>
 <body>
     <!-- Header section with title and subtitle -->
     <header class="header">
-        <div class="container">
-            <h1 class="title">Welcome to Our Data Court</h1>
-            <h2 class="subtitle">This Webpage is all about exploring tennis by looking at data first. </h2>
-        </div>
+        <h1 class="title">Welcome to Our Data Court</h1>
+        <h2 class="subtitle">This Webpage is all about exploring tennis by looking at data first.</h2>
     </header>
 
-    <!-- Section for mission statement -->
-    <section class="section">
-        <div class="container">
-            <h1 class="custom-title">A Data Story ... About Tennis!</h1>
-            <p class="custom-subtitle justified-text">Our Mission: Delivering insights through analysis of historical data for ATP and WTA tennis, alongside GDP and population statistics. Unlocking the stories hidden within the numbers, we dive deep into the world of ATP and WTA tennis, beside the economic tales of GDP and population trends, to deliver data analysis.</p>
-        </div>
-    </section>
+    <!-- Main content with navigation and sections -->
+    <div class="columns is-gapless">
+        <!-- Navigation menu -->
+        <aside class="column is-2 left-nav">
+            <nav class="menu">
+                <p class="menu-label">Home</p>
+                <ul class="menu-list">
+                    <li><a href="#">Landing Page</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <p class="menu-label">Data Stories</p>
+                <ul class="menu-list">
+                    <li><a href="#">Who rules the WTA?</a></li>
+                    <li><a href="#">Who rules the ATP?</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-    <!-- Section with WTA, ATP, Next Story -->
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <!-- Left column -->
-                <div class="column centered-box">
-                    <div class="box">
-                        <h2 class="title is-4">Which country rules the WTA?</h2>
-                        <p>The first story we have to tell is about countries strength in the WTA over the years.</p>
-                    </div>
+        <!-- Main content area -->
+        <div class="column main-content">
+            <!-- Section for mission statement -->
+            <section class="section">
+                <div class="container">
+                    <h1 class="custom-title">A Data Story ... About Tennis!</h1>
+                    <p class="custom-subtitle justified-text">Our Mission: Delivering insights through analysis of historical data for ATP and WTA tennis, alongside GDP and population statistics. Unlocking the stories hidden within the numbers, we dive deep into the world of ATP and WTA tennis, beside the economic tales of GDP and population trends, to deliver data analysis.</p>
                 </div>
-                <!-- Middle column -->
-                <div class="column centered-box">
-                    <div class="box">
-                        <h2 class="title is-4">Which country rules the ATP?</h2>
-                        <p>This story will tell you which country reigns the world of ATP.</p>
-                    </div>
-                </div>
-                <!-- Right column -->
-                <div class="column centered-box">
-                    <div class="box">
-                        <h2 class="title is-4">Next Story</h2>
-                        <p>Just go on.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Section with fun facts -->
-    <section class="section">
-        <div class="container">
-            <h1 class="custom-title">Fun Facts</h1>
-            <p class="custom-subtitle">The fastest serve in men's tennis was recorded by Sam Groth at 263.4 km/h (163.7 mph), while Sabine Lisicki holds the women's record with a serve at 210 km/h (130.5 mph). (The Fact File)</p>
+            <!-- Section with WTA, ATP, Next Story -->
+            <section class="section">
+                <div class="container">
+                    <div class="columns">
+                        <!-- Left column -->
+                        <div class="column centered-box">
+                            <div class="box">
+                                <h2 class="title is-4">Which country rules the WTA?</h2>
+                                <p>The first story we have to tell is about countries strength in the WTA over the years.</p>
+                            </div>
+                        </div>
+                        <!-- Middle column -->
+                        <div class="column centered-box">
+                            <div class="box">
+                                <h2 class="title is-4">Which country rules the ATP?</h2>
+                                <p>This story will tell you which country reigns the world of ATP.</p>
+                            </div>
+                        </div>
+                        <!-- Right column -->
+                        <div class="column centered-box">
+                            <div class="box">
+                                <h2 class="title is-4">Next Story</h2>
+                                <p>Just go on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section with fun facts -->
+            <section class="section">
+                <div class="container">
+                    <h1 class="custom-title">Fun Facts</h1>
+                    <p class="custom-subtitle">The fastest serve in men's tennis was recorded by Sam Groth at 263.4 km/h (163.7 mph), while Sabine Lisicki holds the women's record with a serve at 210 km/h (130.5 mph). (The Fact File)</p>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 </body>
 </html>
