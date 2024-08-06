@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata and external resources -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!-- Bulma CSS framework -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- Custom CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Inline styles -->
     <style>
+        /* General body styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        /* Styling for header section */
         .header {
             background: #f5f5f5; /* Light gray background */
             color: #333; /* Dark gray text color */
@@ -25,6 +31,7 @@
         .header .subtitle {
             font-size: 1.25em;
         }
+        /* Styling for custom titles and subtitles */
         .custom-title {
             font-size: 2em;
             font-weight: normal;
@@ -37,15 +44,18 @@
             text-align: center;
             color: #333;
         }
+        /* Section padding */
         .section {
             padding: 3rem 1.5rem;
         }
+        /* Centered box content */
         .centered-box .box {
             text-align: center;
         }
     </style>
 </head>
 <body>
+    <!-- Header section with title and subtitle -->
     <header class="header">
         <div class="container">
             <h1 class="title">Welcome to Our Data Court</h1>
@@ -53,6 +63,7 @@
         </div>
     </header>
 
+    <!-- Section for mission statement -->
     <section class="section">
         <div class="container">
             <h1 class="custom-title">Our Mission</h1>
@@ -60,21 +71,25 @@
         </div>
     </section>
 
+    <!-- Section with analysis, scraping, and web app details -->
     <section class="section">
         <div class="container">
             <div class="columns">
+                <!-- Analysis column -->
                 <div class="column centered-box">
                     <div class="box">
                         <h2 class="title is-4">Analysis</h2>
                         <p>Comparison per week with ATP and longer time frames back ten years.</p>
                     </div>
                 </div>
+                <!-- Scraping column -->
                 <div class="column centered-box">
                     <div class="box">
                         <h2 class="title is-4">Scraping</h2>
                         <p>Collecting historical data for WTA, ATP, GDP, and population size.</p>
                     </div>
                 </div>
+                <!-- Web App column -->
                 <div class="column centered-box">
                     <div class="box">
                         <h2 class="title is-4">Web App</h2>
@@ -85,6 +100,7 @@
         </div>
     </section>
 
+    <!-- Section with fun facts -->
     <section class="section">
         <div class="container">
             <h1 class="custom-title">Fun Facts</h1>
@@ -93,4 +109,3 @@
     </section>
 </body>
 </html>
-
